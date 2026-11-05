@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>All Pave | Driveway, Patio & Paving Specialists</title>
+<meta name="description" content="All Pave designs and installs driveways, patios, walkways and retaining walls. Free measure and quote, quality workmanship, built to last." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          char: { DEFAULT: '#221F1A', dark: '#17140F', deep: '#0C0B09', line: '#332E26' },
+          clay: { DEFAULT: '#C1552C', dark: '#9C4321', deep: '#6E2E16', soft: '#FBEAE1' },
+          mist: { DEFAULT: '#F6F3EF', dark: '#EAE4DB' },
+          ink: '#1B1812',
+        },
+        fontFamily: {
+          display: ['Sora', 'system-ui', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          lift: '0 1px 2px rgba(34,31,26,.06), 0 8px 24px -6px rgba(34,31,26,.14), 0 24px 48px -16px rgba(34,31,26,.18)',
+          float: '0 2px 4px rgba(34,31,26,.1), 0 18px 40px -10px rgba(12,11,9,.4), 0 40px 80px -24px rgba(12,11,9,.45)',
+          clay: '0 1px 2px rgba(110,46,22,.25), 0 10px 24px -8px rgba(193,85,44,.5)',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, system-ui, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .font-display { font-family: Sora, system-ui, sans-serif; letter-spacing: -0.03em; line-height: 1.08; }
+  .spring { transition: transform .5s cubic-bezier(.34,1.56,.64,1), opacity .3s ease, background-color .3s ease, border-color .3s ease; }
+  .grain::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .07; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .grid-texture { background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 42px 42px; }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq[open] .faq-icon { transform: rotate(45deg); }
+</style>
+</head>
+<body class="bg-white text-ink">
+
+<!-- ============ TOP STRIP ============ -->
+<div class="bg-char-deep text-white/75 text-[13px]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-10 flex items-center justify-between gap-4">
+    <p class="hidden sm:flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-clay"></span>Free measure & quote · Pretoria & surrounds</p>
+    <div class="flex items-center gap-5 ml-auto">
+      <a href="mailto:info@allpave.co.za" class="hover:text-white focus-visible:text-white focus-visible:outline-none focus-visible:underline active:opacity-70">info@allpave.co.za</a>
+      <a href="tel:+27812345678" class="font-semibold text-white hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">081 234 5678</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-mist-dark">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[80px] flex items-center justify-between gap-6">
+    <a href="#top" class="flex items-center gap-2.5 shrink-0 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay active:opacity-80" aria-label="All Pave, home">
+      <span class="grid place-items-center w-11 h-11 rounded-lg bg-char text-clay">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </span>
+      <span class="font-display font-extrabold text-[22px] text-char">ALL<span class="text-clay">PAVE</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-char" aria-label="Main">
+      <a href="#about" class="py-2 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">About</a>
+      <a href="#services" class="py-2 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Services</a>
+      <a href="#gallery" class="py-2 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Gallery</a>
+      <a href="#faq" class="py-2 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">FAQ</a>
+      <a href="#contact" class="py-2 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="spring hidden sm:inline-flex items-center gap-2 h-12 px-6 rounded-md bg-clay text-white font-bold shadow-clay hover:-translate-y-0.5 hover:bg-clay-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-clay/30 active:translate-y-0 active:scale-[.98]">
+        Get a quote
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden w-12 h-12 grid place-items-center rounded-md border border-mist-dark text-char hover:bg-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay active:scale-95" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="lg:hidden hidden border-t border-mist-dark bg-white" aria-label="Mobile">
+    <div class="px-4 py-3 grid text-[16px] font-semibold">
+      <a href="#about" class="py-3 border-b border-mist-dark hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">About</a>
+      <a href="#services" class="py-3 border-b border-mist-dark hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Services</a>
+      <a href="#gallery" class="py-3 border-b border-mist-dark hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Gallery</a>
+      <a href="#faq" class="py-3 border-b border-mist-dark hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">FAQ</a>
+      <a href="#contact" class="py-3 hover:text-clay focus-visible:text-clay focus-visible:outline-none active:opacity-70">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden bg-char text-white grain">
+  <div class="absolute inset-0 grid-texture"></div>
+  <div class="absolute inset-0" style="background:
+      radial-gradient(55% 65% at 90% 20%, rgba(193,85,44,.22), transparent 60%),
+      radial-gradient(45% 55% at 5% 95%, rgba(255,255,255,.06), transparent 70%);"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-14 sm:pt-20 pb-16 lg:pb-24 grid lg:grid-cols-[1.05fr_1fr] gap-12 lg:gap-16 items-center">
+    <div>
+      <p class="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 pl-2 pr-4 py-1.5 text-[13px] font-semibold text-white/85">
+        <span class="grid place-items-center w-6 h-6 rounded-full bg-clay text-white">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+        </span>
+        Free measure & quote on every project
+      </p>
+      <h1 class="font-display font-extrabold mt-6 text-[42px] sm:text-[56px] lg:text-[62px]">
+        Paving done right,<br/>the first time.
+      </h1>
+      <p class="mt-6 max-w-[520px] text-[17px] sm:text-lg text-white/70">
+        From driveways to pool patios, we design and lay paving that holds its shape and its colour for years &mdash; for homes, complexes and businesses.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a href="https://wa.me/27812345678?text=Hi%20All%20Pave%2C%20I%27d%20like%20a%20free%20measure%20and%20quote." class="spring inline-flex items-center gap-2.5 h-14 px-7 rounded-md bg-clay text-white font-bold shadow-clay hover:-translate-y-0.5 hover:bg-clay-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-clay/40 active:translate-y-0 active:scale-[.98]">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>
+          Get a free quote
+        </a>
+        <a href="#services" class="spring inline-flex items-center gap-2 h-14 px-7 rounded-md border border-white/20 text-white font-bold hover:bg-white/10 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30 active:translate-y-0 active:scale-[.98]">
+          Our services
+        </a>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="hidden sm:block absolute -inset-4 rounded-xl border-2 border-clay/50 translate-x-5 translate-y-5"></div>
+      <div class="relative rounded-xl overflow-hidden shadow-float aspect-[4/3.1]">
+        <img src="brand_assets/hero-pool-paving.jpg" alt="Brick paving around a covered pool patio" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-char-deep/80 via-char-deep/10 to-transparent"></div>
+        <div class="absolute inset-0 bg-clay/10 mix-blend-multiply"></div>
+      </div>
+      <div class="absolute -right-3 sm:-right-6 -top-5 sm:-top-7 w-32 sm:w-40 aspect-square rounded-xl overflow-hidden border-[5px] border-white shadow-float">
+        <img src="brand_assets/hero-driveway.jpg" alt="Close-up of grey driveway paving blocks" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute left-4 sm:left-6 -bottom-6 sm:-bottom-8 z-10 rounded-lg bg-white text-char shadow-float px-5 py-4 flex items-center gap-4">
+        <div class="font-display font-extrabold text-[36px] text-clay leading-none">15+</div>
+        <div class="text-[13px] font-semibold leading-snug text-char/70">years laying<br/>paving</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / INTRO ============ -->
+<section id="about" class="relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="col-span-2 rounded-xl overflow-hidden shadow-lift aspect-[16/10]">
+        <img src="brand_assets/about-2.jpg" alt="Worker laying grey paving blocks on a prepared base" class="w-full h-full object-cover" />
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lift aspect-square">
+        <img src="brand_assets/about-1.jpg" alt="Close-up of neatly laid grey driveway paving" class="w-full h-full object-cover" />
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lift aspect-square">
+        <img src="brand_assets/about-3.jpg" alt="Covered patio with brick paving beside a swimming pool" class="w-full h-full object-cover" />
+      </div>
+    </div>
+    <div>
+      <p class="text-[13px] font-bold uppercase tracking-[.2em] text-clay">About All Pave</p>
+      <h2 class="font-display font-extrabold text-[36px] sm:text-[48px] mt-3">Paving that's built to last</h2>
+      <p class="mt-6 text-[17px] text-ink/75">
+        A driveway or patio takes real punishment &mdash; sun, rain, cars and foot traffic, year after year. We prepare the base properly and lay every paver by hand, so the finish stays flat, tight and good-looking long after we've left.
+      </p>
+      <p class="mt-4 text-[17px] text-ink/75">
+        Every project starts with a free measure and quote, so you know exactly what you're getting before we start.
+      </p>
+      <dl class="mt-10 grid grid-cols-2 gap-5">
+        <div class="flex items-start gap-3">
+          <span class="w-11 h-11 rounded-lg bg-clay-soft text-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+          <div><dt class="font-bold text-[15px]">Free measure & quote</dt><dd class="text-[14px] text-ink/60">No cost, no obligation</dd></div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="w-11 h-11 rounded-lg bg-clay-soft text-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <div><dt class="font-bold text-[15px]">15+ years</dt><dd class="text-[14px] text-ink/60">Laying paving in Gauteng</dd></div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="w-11 h-11 rounded-lg bg-clay-soft text-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"/></svg></span>
+          <div><dt class="font-bold text-[15px]">Workmanship guarantee</dt><dd class="text-[14px] text-ink/60">We stand by every job</dd></div>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="w-11 h-11 rounded-lg bg-clay-soft text-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/></svg></span>
+          <div><dt class="font-bold text-[15px]">Fits your budget</dt><dd class="text-[14px] text-ink/60">Options at every price point</dd></div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="relative bg-mist">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+    <div class="max-w-[640px]">
+      <p class="text-[13px] font-bold uppercase tracking-[.2em] text-clay">What we lay</p>
+      <h2 class="font-display font-extrabold text-[36px] sm:text-[48px] mt-3">Every surface, done properly.</h2>
+      <p class="mt-5 text-[17px] text-ink/70">From the driveway at your gate to the patio by your pool, we design and install paving to suit your property and your budget.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-6">
+      <article class="group rounded-xl overflow-hidden bg-white shadow-lift spring hover:-translate-y-1">
+        <div class="relative aspect-[16/9] overflow-hidden">
+          <img src="brand_assets/svc-driveway.jpg" alt="Grey interlocking driveway paving" class="spring w-full h-full object-cover group-hover:scale-[1.05]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-char-deep/70 to-transparent"></div>
+          <div class="absolute inset-0 bg-clay/10 mix-blend-multiply"></div>
+          <span class="absolute bottom-4 left-5 font-display font-extrabold text-[26px] text-white">Driveway paving</span>
+        </div>
+        <div class="p-6">
+          <p class="text-[15px] text-ink/70">Interlocking, cobble and clay brick driveways laid on a properly compacted base, built to carry daily traffic without shifting.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Interlocking pavers</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Clay brick</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Cobble</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-xl overflow-hidden bg-white shadow-lift spring hover:-translate-y-1">
+        <div class="relative aspect-[16/9] overflow-hidden">
+          <img src="brand_assets/svc-patio-pool.jpg" alt="Brick paving laid around the edge of a swimming pool" class="spring w-full h-full object-cover group-hover:scale-[1.05]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-char-deep/70 to-transparent"></div>
+          <div class="absolute inset-0 bg-clay/10 mix-blend-multiply"></div>
+          <span class="absolute bottom-4 left-5 font-display font-extrabold text-[26px] text-white">Patio & pool paving</span>
+        </div>
+        <div class="p-6">
+          <p class="text-[15px] text-ink/70">Slip-resistant, pool-safe paving for patios, entertainment areas and pool surrounds, laid with proper falls for drainage.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Pool surrounds</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Patios</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Entertainment areas</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-xl overflow-hidden bg-white shadow-lift spring hover:-translate-y-1">
+        <div class="relative aspect-[16/9] overflow-hidden">
+          <img src="brand_assets/svc-walkway.jpg" alt="Stepping-stone garden pathway across a lawn" class="spring w-full h-full object-cover group-hover:scale-[1.05]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-char-deep/70 to-transparent"></div>
+          <div class="absolute inset-0 bg-clay/10 mix-blend-multiply"></div>
+          <span class="absolute bottom-4 left-5 font-display font-extrabold text-[26px] text-white">Walkways & paths</span>
+        </div>
+        <div class="p-6">
+          <p class="text-[15px] text-ink/70">Garden paths and walkways in stepping-stone, slab or block paving, designed to fit the shape of your garden.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Stepping stones</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Garden paths</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Slabs</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-xl overflow-hidden bg-white shadow-lift spring hover:-translate-y-1">
+        <div class="relative aspect-[16/9] overflow-hidden">
+          <img src="brand_assets/svc-retaining.jpg" alt="Natural stone retaining wall along a garden bank" class="spring w-full h-full object-cover group-hover:scale-[1.05]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-char-deep/70 to-transparent"></div>
+          <div class="absolute inset-0 bg-clay/10 mix-blend-multiply"></div>
+          <span class="absolute bottom-4 left-5 font-display font-extrabold text-[26px] text-white">Retaining walls & edging</span>
+        </div>
+        <div class="p-6">
+          <p class="text-[15px] text-ink/70">Retaining walls, raised beds and paver edging to hold back sloped ground and define your driveway or garden beds.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Retaining walls</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Raised beds</span>
+            <span class="rounded-full bg-mist px-3 py-1 text-[12px] font-semibold text-char">Edging</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY / TRUST STRIP ============ -->
+<section id="gallery" class="relative bg-char text-white overflow-hidden grain">
+  <div class="absolute inset-0 grid-texture"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+    <p class="text-center text-[13px] font-bold uppercase tracking-[.2em] text-white/60">Why All Pave</p>
+    <h2 class="font-display font-extrabold text-[28px] sm:text-[34px] mt-2 text-center">What you get on every job</h2>
+    <div class="mt-10 flex flex-wrap justify-center gap-3">
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Free measure & quote</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Proper base preparation</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Hand-laid paving</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Correct drainage falls</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Workmanship guarantee</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">On-time completion</span>
+      <span class="rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-[14px] font-semibold">Clean site handover</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative overflow-hidden bg-clay text-white">
+  <div class="absolute inset-0 opacity-15 mix-blend-overlay">
+    <img src="brand_assets/cta-slabs.jpg" alt="" class="w-full h-full object-cover" />
+  </div>
+  <div class="absolute inset-0" style="background: radial-gradient(60% 90% at 100% 50%, rgba(12,11,9,.35), transparent 70%), radial-gradient(40% 60% at 0% 0%, rgba(255,255,255,.18), transparent 70%);"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 grid lg:grid-cols-[1fr_auto] gap-8 items-center">
+    <h2 class="font-display font-extrabold text-[34px] sm:text-[48px] max-w-[720px]">Get a free measure and quote &mdash; no cost, no obligation.</h2>
+    <div class="flex flex-wrap gap-3">
+      <a href="tel:+27812345678" class="spring inline-flex items-center gap-2.5 h-14 px-7 rounded-md bg-char text-white font-bold shadow-float hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/50 active:translate-y-0 active:scale-[.98]">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        081 234 5678
+      </a>
+      <a href="#contact" class="spring inline-flex items-center gap-2 h-14 px-7 rounded-md border-2 border-white text-white font-bold hover:bg-white hover:text-clay-deep hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/50 active:translate-y-0 active:scale-[.98]">Request a quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="relative bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 max-w-[820px]">
+    <p class="text-[13px] font-bold uppercase tracking-[.2em] text-clay">Good to know</p>
+    <h2 class="font-display font-extrabold text-[36px] sm:text-[44px] mt-3">Questions we get asked</h2>
+    <div class="mt-10 divide-y divide-mist-dark border-y border-mist-dark">
+      <details class="faq group py-6" open>
+        <summary class="flex items-center justify-between gap-6 cursor-pointer list-none font-bold text-[18px] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay hover:text-clay active:opacity-70">
+          How does the free quote work?
+          <span class="faq-icon spring shrink-0 w-9 h-9 rounded-full bg-mist grid place-items-center text-clay text-[22px] leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-ink/70 pr-12">We come out, measure the area, talk through paver options and colours, and give you a written quote &mdash; at no cost and no obligation to go ahead.</p>
+      </details>
+      <details class="faq group py-6">
+        <summary class="flex items-center justify-between gap-6 cursor-pointer list-none font-bold text-[18px] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay hover:text-clay active:opacity-70">
+          How long does a typical job take?
+          <span class="faq-icon spring shrink-0 w-9 h-9 rounded-full bg-mist grid place-items-center text-clay text-[22px] leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-ink/70 pr-12">It depends on the size and ground conditions, but most driveways and patios are completed within a few days. We'll give you a clear timeline with your quote.</p>
+      </details>
+      <details class="faq group py-6">
+        <summary class="flex items-center justify-between gap-6 cursor-pointer list-none font-bold text-[18px] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay hover:text-clay active:opacity-70">
+          Can you match existing paving?
+          <span class="faq-icon spring shrink-0 w-9 h-9 rounded-full bg-mist grid place-items-center text-clay text-[22px] leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-ink/70 pr-12">In most cases, yes. Bring a photo or a sample paver and we'll do our best to match the style and colour for an extension or repair.</p>
+      </details>
+      <details class="faq group py-6">
+        <summary class="flex items-center justify-between gap-6 cursor-pointer list-none font-bold text-[18px] rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay hover:text-clay active:opacity-70">
+          Which areas do you service?
+          <span class="faq-icon spring shrink-0 w-9 h-9 rounded-full bg-mist grid place-items-center text-clay text-[22px] leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-ink/70 pr-12">We service Pretoria and the greater Gauteng area. Send us your address on WhatsApp and we'll confirm.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="relative bg-char text-white overflow-hidden grain">
+  <div class="absolute inset-0 grid-texture"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 grid lg:grid-cols-[1fr_1.15fr] gap-14 items-start">
+    <div>
+      <p class="text-[13px] font-bold uppercase tracking-[.2em] text-clay">Contact us</p>
+      <h2 class="font-display font-extrabold text-[36px] sm:text-[48px] mt-3">Let's pave your property</h2>
+      <p class="mt-5 text-white/65 max-w-[440px]">Tell us about your project and we'll arrange a free measure and quote.</p>
+      <ul class="mt-10 grid gap-4">
+        <li><a href="tel:+27812345678" class="spring group flex items-center gap-4 rounded-lg bg-white/5 border border-white/10 p-4 hover:bg-white/10 hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay active:scale-[.99]">
+          <span class="w-12 h-12 rounded-md bg-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span><span class="block text-[13px] text-white/55">Call us</span><span class="font-bold text-[18px]">081 234 5678</span></span>
+        </a></li>
+        <li><a href="https://wa.me/27812345678" target="_blank" rel="noopener" class="spring group flex items-center gap-4 rounded-lg bg-white/5 border border-white/10 p-4 hover:bg-white/10 hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay active:scale-[.99]">
+          <span class="w-12 h-12 rounded-md bg-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg></span>
+          <span><span class="block text-[13px] text-white/55">WhatsApp</span><span class="font-bold text-[18px]">Send us your details</span></span>
+        </a></li>
+        <li><a href="mailto:info@allpave.co.za" class="spring group flex items-center gap-4 rounded-lg bg-white/5 border border-white/10 p-4 hover:bg-white/10 hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay active:scale-[.99]">
+          <span class="w-12 h-12 rounded-md bg-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+          <span><span class="block text-[13px] text-white/55">Email</span><span class="font-bold text-[18px]">info@allpave.co.za</span></span>
+        </a></li>
+        <li><div class="flex items-center gap-4 rounded-lg bg-white/5 border border-white/10 p-4">
+          <span class="w-12 h-12 rounded-md bg-clay grid place-items-center shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-6.2-8-12a8 8 0 0 1 16 0c0 5.8-8 12-8 12z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span><span class="block text-[13px] text-white/55">Based in</span><span class="font-bold text-[18px]">Pretoria, Gauteng</span></span>
+        </div></li>
+      </ul>
+    </div>
+
+    <form id="quote-form" class="relative rounded-xl bg-white text-ink p-6 sm:p-10 shadow-float" novalidate>
+      <h3 class="font-display font-extrabold text-[30px]">Request a free quote</h3>
+      <p class="text-[15px] text-ink/60 mt-1">Your request opens in WhatsApp, ready to send.</p>
+      <div class="mt-8 grid sm:grid-cols-2 gap-5">
+        <label class="grid gap-1.5 text-[14px] font-semibold">Name
+          <input name="name" required autocomplete="name" class="h-12 rounded-md border border-mist-dark bg-mist px-4 font-normal outline-none hover:border-char/30 focus-visible:border-clay focus-visible:ring-4 focus-visible:ring-clay/15" />
+        </label>
+        <label class="grid gap-1.5 text-[14px] font-semibold">Phone
+          <input name="phone" type="tel" required autocomplete="tel" class="h-12 rounded-md border border-mist-dark bg-mist px-4 font-normal outline-none hover:border-char/30 focus-visible:border-clay focus-visible:ring-4 focus-visible:ring-clay/15" />
+        </label>
+        <label class="grid gap-1.5 text-[14px] font-semibold sm:col-span-2">What do you need paved?
+          <select name="service" class="h-12 rounded-md border border-mist-dark bg-mist px-4 font-normal outline-none hover:border-char/30 focus-visible:border-clay focus-visible:ring-4 focus-visible:ring-clay/15">
+            <option>Driveway</option>
+            <option>Patio / pool surround</option>
+            <option>Walkway / garden path</option>
+            <option>Retaining wall / edging</option>
+            <option>Not sure &mdash; need advice</option>
+          </select>
+        </label>
+        <label class="grid gap-1.5 text-[14px] font-semibold sm:col-span-2">Approx. area (m&sup2;)
+          <input name="area" inputmode="numeric" placeholder="e.g. 60" class="h-12 rounded-md border border-mist-dark bg-mist px-4 font-normal outline-none hover:border-char/30 focus-visible:border-clay focus-visible:ring-4 focus-visible:ring-clay/15" />
+        </label>
+        <label class="grid gap-1.5 text-[14px] font-semibold sm:col-span-2">Anything else?
+          <textarea name="message" rows="4" placeholder="Address, paver colour, timeline…" class="rounded-md border border-mist-dark bg-mist px-4 py-3 font-normal outline-none hover:border-char/30 focus-visible:border-clay focus-visible:ring-4 focus-visible:ring-clay/15"></textarea>
+        </label>
+      </div>
+      <p id="form-error" class="hidden mt-4 text-[14px] font-semibold text-clay-deep" role="alert">Please add your name and phone number.</p>
+      <button type="submit" class="spring mt-7 w-full inline-flex items-center justify-center gap-2.5 h-14 rounded-md bg-clay text-white font-bold shadow-clay hover:-translate-y-0.5 hover:bg-clay-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-clay/40 active:translate-y-0 active:scale-[.99]">
+        Send via WhatsApp
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-char-deep text-white/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] gap-10">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="grid place-items-center w-10 h-10 rounded-lg bg-clay text-white">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </span>
+        <span class="font-display font-extrabold text-[20px] text-white">ALL<span class="text-clay">PAVE</span></span>
+      </div>
+      <p class="mt-4 text-[15px] max-w-[300px]">Paving done right, the first time. Driveways, patios, walkways and retaining walls across Pretoria.</p>
+    </div>
+    <div>
+      <h4 class="font-display font-extrabold text-[18px] text-white">Quick links</h4>
+      <ul class="mt-4 grid gap-2 text-[15px]">
+        <li><a href="#about" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">About</a></li>
+        <li><a href="#services" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Services</a></li>
+        <li><a href="#gallery" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Gallery</a></li>
+        <li><a href="#faq" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">FAQ</a></li>
+        <li><a href="#contact" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-extrabold text-[18px] text-white">Services</h4>
+      <ul class="mt-4 grid gap-2 text-[15px]">
+        <li><a href="#services" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Driveway paving</a></li>
+        <li><a href="#services" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Patio & pool paving</a></li>
+        <li><a href="#services" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Walkways & paths</a></li>
+        <li><a href="#services" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">Retaining walls</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-extrabold text-[18px] text-white">Contact us</h4>
+      <ul class="mt-4 grid gap-2 text-[15px]">
+        <li><a href="tel:+27812345678" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">081 234 5678</a></li>
+        <li><a href="mailto:info@allpave.co.za" class="hover:text-clay focus-visible:text-clay focus-visible:outline-none focus-visible:underline active:opacity-70">info@allpave.co.za</a></li>
+        <li>Pretoria, Gauteng</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-wrap justify-between gap-3 text-[13px] text-white/50">
+      <p>&copy; <span id="year">2026</span> All Pave. All rights reserved.</p>
+      <p>Driveways &middot; Patios &middot; Walkways &middot; Retaining walls &middot; Pretoria</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/27812345678" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="spring fixed right-5 bottom-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white grid place-items-center shadow-float hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/40 active:scale-95">
+  <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const open = menu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  document.getElementById('quote-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    const err = document.getElementById('form-error');
+    if (!f.name.value.trim() || !f.phone.value.trim()) { err.classList.remove('hidden'); return; }
+    err.classList.add('hidden');
+    const lines = [
+      'Hi All Pave, I\'d like a free measure and quote.',
+      'Name: ' + f.name.value.trim(),
+      'Phone: ' + f.phone.value.trim(),
+      'Needed: ' + f.service.value,
+      f.area.value.trim() && 'Approx. area: ' + f.area.value.trim() + 'm²',
+      f.message.value.trim() && 'Notes: ' + f.message.value.trim(),
+    ].filter(Boolean);
+    window.open('https://wa.me/27812345678?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+  });
+</script>
+</body>
+</html>
